@@ -77,8 +77,7 @@ namespace MyAppTest
 
         private TabHost.TabSpec BuildTabSpec(string tag, int resLabel, int resIcon, Intent content)
         {
-            return this.mTabHost.NewTabSpec(tag).SetIndicator(GetString(resLabel),
-                Resources.GetDrawable(resIcon)).SetContent(content);
+            return this.mTabHost.NewTabSpec(tag).SetIndicator(GetString(resLabel),Resources.GetDrawable(resIcon)).SetContent(content);
         }
     }
 }

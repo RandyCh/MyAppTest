@@ -94,18 +94,19 @@ namespace MyAppTest
                 }
 
             };
-            view.FindViewById<Button>(Resource.Id.btnAlert).Click +=(sender,e)=> 
-            {
-                //Dialog dialog = new Dialog(context);
-                //dialog.SetContentView(Resource.Layout.SecondLayout);
-                //dialog.SetTitle("Dialog with Radio Button");
-                //dialog.SetCancelable(true);
-                ////RadioButton radioRed = (RadioButton)dialog.FindViewById(Resource.Id.radio_red);
-                ////RadioButton radioBlue = (RadioButton)dialog.FindViewById(Resource.Id.radio_blue);
-                ////radioRed.Click += RadioButtonClick;
-                ////radioBlue.Click += RadioButtonClick;
-                //dialog.Show();
-            };
+            ImageButton btnAlter = view.FindViewById<ImageButton>(Resource.Id.btnAlert);
+            btnAlter.Click += delegate { };
+            //{
+            //    //Dialog dialog = new Dialog(context);
+            //    //dialog.SetContentView(Resource.Layout.SecondLayout);
+            //    //dialog.SetTitle("Dialog with Radio Button");
+            //    //dialog.SetCancelable(true);
+            //    ////RadioButton radioRed = (RadioButton)dialog.FindViewById(Resource.Id.radio_red);
+            //    ////RadioButton radioBlue = (RadioButton)dialog.FindViewById(Resource.Id.radio_blue);
+            //    ////radioRed.Click += RadioButtonClick;
+            //    ////radioBlue.Click += RadioButtonClick;
+            //    //dialog.Show();
+            //};
             return view;
         }
     }

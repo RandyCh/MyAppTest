@@ -368,9 +368,6 @@ namespace MyAppTest
 			// aapt resource value: 0x7f03000a
 			public const int PointList = 2130903050;
 			
-			// aapt resource value: 0x7f03000b
-			public const int SecondLayout = 2130903051;
-			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
