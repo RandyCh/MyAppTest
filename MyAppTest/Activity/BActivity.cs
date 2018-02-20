@@ -8,7 +8,8 @@ using Android.OS;
 
 namespace MyAppTest
 {
-    [Activity(Label = "CActivity", Icon = "@drawable/icon", Theme = "@android:style/Theme.DeviceDefault.NoActionBar")]
+    //[Activity(Label = "CActivity", Icon = "@drawable/icon", Theme = "@android:style/Theme.DeviceDefault.NoActionBar")]
+    [Activity(Label ="撥號服務")]
     public class BActivity : Activity
     {
         string[] items;

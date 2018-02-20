@@ -70,7 +70,7 @@ namespace MyAppTest
             view.FindViewById<TextView>(Resource.Id.txtMissionNum).Text = item.MissionNum;
             view.FindViewById<TextView>(Resource.Id.txtMissionName).Text = item.MissionName;
             view.FindViewById<TextView>(Resource.Id.txtPlateNum).Text = item.PlateNum;
-            Button btnState = view.FindViewById<Button>(Resource.Id.btnState);
+            ImageButton btnState = view.FindViewById<ImageButton>(Resource.Id.btnState);
             btnState.Click += delegate
             {
                 if (item.MissionStatus < 4)
@@ -79,16 +79,19 @@ namespace MyAppTest
                     switch (item.MissionStatus)
                     {
                         case 1:
-                            btnState.Text = "裝載完成";
-                            btnState.SetBackgroundColor(Color.ParseColor("#FF0088"));
+                            btnState.SetImageResource((Resource.Drawable.state2));
+                            //btnState.Text = "裝載完成";
+                            //btnState.SetBackgroundColor(Color.ParseColor("#FF0088"));
                             break;
                         case 2:
-                            btnState.Text = "到卸貨點";
-                            btnState.SetBackgroundColor(Color.ParseColor("#99FF33"));
+                            btnState.SetImageResource((Resource.Drawable.state3));
+                            //btnState.Text = "到卸貨點";
+                            //btnState.SetBackgroundColor(Color.ParseColor("#99FF33"));
                             break;
                         case 3:
-                            btnState.Text = "卸貨完成";
-                            btnState.SetBackgroundColor(Color.ParseColor("#1c7900"));
+                            btnState.SetImageResource((Resource.Drawable.state4));
+                            //btnState.Text = "卸貨完成";
+                            //btnState.SetBackgroundColor(Color.ParseColor("#1c7900"));
                             break;
                     }
                 }
@@ -96,22 +99,50 @@ namespace MyAppTest
             };
             ImageButton btnAltert = view.FindViewById<ImageButton>(Resource.Id.btnAlert);
             btnAltert.Click += delegate {
-                //StartActivity(typeof(Activity2));
                 Dialog dialog = new Dialog(context);
                 dialog.SetContentView(Resource.Layout.AlertList);
-                dialog.SetTitle("發生異常請選擇");
+                dialog.SetTitle("Dialog with Radio Button");
                 dialog.SetCancelable(true);
-                ////    ////RadioButton radioRed = (RadioButton)dialog.FindViewById(Resource.Id.radio_red);
-                ////    ////RadioButton radioBlue = (RadioButton)dialog.FindViewById(Resource.Id.radio_blue);
-                ////    ////radioRed.Click += RadioButtonClick;
-                ////    ////radioBlue.Click += RadioButtonClick;
+                RadioButton radiobtn1 = (RadioButton)dialog.FindViewById(Resource.Id.radioButton1);
+                RadioButton radiobtn2 = (RadioButton)dialog.FindViewById(Resource.Id.radioButton2);
+                RadioButton radiobtn3 = (RadioButton)dialog.FindViewById(Resource.Id.radioButton3);
+                RadioButton radiobtn4 = (RadioButton)dialog.FindViewById(Resource.Id.radioButton4);
+                RadioButton radiobtn5 = (RadioButton)dialog.FindViewById(Resource.Id.radioButton5);
+                Button btnConfirm = (Button)dialog.FindViewById(Resource.Id.btnConfirm);
+                Button btnClose = (Button)dialog.FindViewById(Resource.Id.btnClose);
+                btnConfirm.Click +=delegate { dialog.Dismiss(); };
+                btnClose.Click += delegate { dialog.Dismiss(); };
                 dialog.Show();
 
-               
+                //using (var builder = new AlertDialog.Builder(context))
+                //{
+                //    var title = "Please edit your details:";
+                //    builder.SetTitle(title);
 
+                //    builder.SetPositiveButton("OK", OkAction);
+                //    builder.SetNegativeButton("Cancel", CancelAction);
+                //    var myCustomDialog = builder.Create();
 
+                //    myCustomDialog.Show();
+                //}
             };
             return view;
         }
+        private void OkAction(object sender, DialogClickEventArgs e)
+        {
+            var myButton = sender as Button; //this will give you the OK button on the dialog but you're already in here so you don't really need it - just perform the action you want to do directly unless I'm missing something..
+            if (myButton != null)
+            {
+                //do something on ok selected
+            }
+        }
+        private void CancelAction(object sender, DialogClickEventArgs e)
+        {
+            //do something on cancel selected
+        }
+
+
+
     }
+
 }

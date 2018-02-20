@@ -9,16 +9,21 @@ using Android.Graphics;
 
 namespace MyAppTest
 {
-  
-    [Activity]
+
+    [Activity(Label = "Your App Name", NoHistory = true)]
     public class CActivity : Activity
     {
+        //protected override void OnCreate(Bundle bundle)
+        //{
+        //    base.OnCreate(bundle);
+        //    //載入頁面
+        //    SetContentView(Resource.Layout.Login);
+        //}
         protected override void OnCreate(Bundle bundle)
         {
-            base.OnCreate(bundle);
-            SetContentView(Resource.Layout.Login);
 
-         }
+            base.OnBackPressed();
+        }
     }
 }
 

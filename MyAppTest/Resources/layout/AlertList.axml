@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="其他運輸原因"
-            android:id="@+id/radioButton" />
+            android:id="@+id/radioButton5" />
     </RadioGroup>
     <TextView
         android:text="其他原因"
@@ -56,13 +56,11 @@
             android:text="確定"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:id="@+id/button1" />
+            android:id="@+id/btnConfirm" />
         <Button
             android:text="取消"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:id="@+id/button2" />
+            android:id="@+id/btnClose" />
     </LinearLayout>
 </LinearLayout>

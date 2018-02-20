@@ -126,8 +126,8 @@ namespace MyAppTest
 			// aapt resource value: 0x7f020002
 			public const int Bells = 2130837506;
 			
-			// aapt resource value: 0x7f020017
-			public const int black = 2130837527;
+			// aapt resource value: 0x7f02001b
+			public const int black = 2130837531;
 			
 			// aapt resource value: 0x7f020003
 			public const int home_btn_bg = 2130837507;
@@ -177,35 +177,47 @@ namespace MyAppTest
 			// aapt resource value: 0x7f020012
 			public const int Kerry = 2130837522;
 			
-			// aapt resource value: 0x7f02001b
-			public const int list_background = 2130837531;
+			// aapt resource value: 0x7f02001f
+			public const int list_background = 2130837535;
 			
-			// aapt resource value: 0x7f020015
-			public const int ltgray = 2130837525;
+			// aapt resource value: 0x7f020019
+			public const int ltgray = 2130837529;
 			
-			// aapt resource value: 0x7f020016
-			public const int ltyellow = 2130837526;
+			// aapt resource value: 0x7f02001a
+			public const int ltyellow = 2130837530;
 			
 			// aapt resource value: 0x7f020013
 			public const int maintab_toolbar_bg = 2130837523;
 			
-			// aapt resource value: 0x7f02001d
-			public const int namcard_picker_bkg_hover = 2130837533;
+			// aapt resource value: 0x7f020021
+			public const int namcard_picker_bkg_hover = 2130837537;
 			
-			// aapt resource value: 0x7f02001c
-			public const int namcard_picker_bkg_normal = 2130837532;
+			// aapt resource value: 0x7f020020
+			public const int namcard_picker_bkg_normal = 2130837536;
 			
 			// aapt resource value: 0x7f020014
 			public const int red_button = 2130837524;
 			
+			// aapt resource value: 0x7f020015
+			public const int state1 = 2130837525;
+			
+			// aapt resource value: 0x7f020016
+			public const int state2 = 2130837526;
+			
+			// aapt resource value: 0x7f020017
+			public const int state3 = 2130837527;
+			
 			// aapt resource value: 0x7f020018
-			public const int transparent = 2130837528;
+			public const int state4 = 2130837528;
 			
-			// aapt resource value: 0x7f02001a
-			public const int transparent_background = 2130837530;
+			// aapt resource value: 0x7f02001c
+			public const int transparent = 2130837532;
 			
-			// aapt resource value: 0x7f020019
-			public const int widget_edit_block_bg_normal = 2130837529;
+			// aapt resource value: 0x7f02001e
+			public const int transparent_background = 2130837534;
+			
+			// aapt resource value: 0x7f02001d
+			public const int widget_edit_block_bg_normal = 2130837533;
 			
 			static Drawable()
 			{
@@ -238,17 +250,23 @@ namespace MyAppTest
 			// aapt resource value: 0x7f07001c
 			public const int btnAlert = 2131165212;
 			
+			// aapt resource value: 0x7f07000a
+			public const int btnClose = 2131165194;
+			
+			// aapt resource value: 0x7f070009
+			public const int btnConfirm = 2131165193;
+			
 			// aapt resource value: 0x7f070022
 			public const int btnLogin = 2131165218;
 			
 			// aapt resource value: 0x7f070012
 			public const int btnState = 2131165202;
 			
-			// aapt resource value: 0x7f070009
-			public const int button1 = 2131165193;
+			// aapt resource value: 0x7f070028
+			public const int button1 = 2131165224;
 			
-			// aapt resource value: 0x7f07000a
-			public const int button2 = 2131165194;
+			// aapt resource value: 0x7f070029
+			public const int button2 = 2131165225;
 			
 			// aapt resource value: 0x7f070021
 			public const int checkBox1 = 2131165217;
@@ -283,17 +301,14 @@ namespace MyAppTest
 			// aapt resource value: 0x7f07000b
 			public const int listView1 = 2131165195;
 			
-			// aapt resource value: 0x7f070028
-			public const int listView2 = 2131165224;
+			// aapt resource value: 0x7f07002a
+			public const int listView2 = 2131165226;
 			
 			// aapt resource value: 0x7f070027
 			public const int lvExp = 2131165223;
 			
 			// aapt resource value: 0x7f070023
 			public const int main_radio = 2131165219;
-			
-			// aapt resource value: 0x7f070005
-			public const int radioButton = 2131165189;
 			
 			// aapt resource value: 0x7f070001
 			public const int radioButton1 = 2131165185;
@@ -306,6 +321,9 @@ namespace MyAppTest
 			
 			// aapt resource value: 0x7f070004
 			public const int radioButton4 = 2131165188;
+			
+			// aapt resource value: 0x7f070005
+			public const int radioButton5 = 2131165189;
 			
 			// aapt resource value: 0x7f070000
 			public const int radioGroup1 = 2131165184;

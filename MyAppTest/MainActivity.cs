@@ -52,7 +52,8 @@ namespace MyAppTest
                         this.mTabHost.SetCurrentTabByTag("B_TAB");
                         break;
                     case Resource.Id.radio_button2:
-                        this.mTabHost.SetCurrentTabByTag("C_TAB");
+                        this.Finish();
+                        //this.mTabHost.SetCurrentTabByTag("C_TAB");
                         break;
                 }
             }
