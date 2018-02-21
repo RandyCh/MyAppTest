@@ -65,7 +65,7 @@ namespace MyAppTest
             if (view == null)
             {
                 //使用自訂的Customlayout
-                view = context.LayoutInflater.Inflate(Resource.Layout.layout1, null);
+                view = context.LayoutInflater.Inflate(Resource.Layout.PointItem, null);
             }
             view.FindViewById<TextView>(Resource.Id.txtMissionNum).Text = item.MissionNum;
             view.FindViewById<TextView>(Resource.Id.txtMissionName).Text = item.MissionName;

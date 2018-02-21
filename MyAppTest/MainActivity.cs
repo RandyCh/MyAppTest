@@ -25,20 +25,13 @@ namespace MyAppTest
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Maintabs);
 
-            this.mAIntent = new Intent(this, typeof (AActivity));
-            this.mBIntent = new Intent(this, typeof (BActivity));
-            this.mCIntent = new Intent(this, typeof (CActivity));
-
-
+            this.mAIntent = new Intent(this, typeof (MissionActivity));
+            this.mBIntent = new Intent(this, typeof (CallServiceActivity));
             ((RadioButton)FindViewById(Resource.Id.radio_button0)).SetOnCheckedChangeListener(this);
             ((RadioButton)FindViewById(Resource.Id.radio_button1)).SetOnCheckedChangeListener(this);
             ((RadioButton)FindViewById(Resource.Id.radio_button2)).SetOnCheckedChangeListener(this);
-
-
-
             SetupIntent();
         }
-
         public void OnCheckedChanged(CompoundButton buttonView, bool isChecked)
         {
             if (isChecked)
@@ -64,14 +57,11 @@ namespace MyAppTest
             this.mTabHost = this.TabHost;
             TabHost localTabHost = this.mTabHost;
 
-            localTabHost.AddTab(BuildTabSpec("A_TAB", Resource.String.main_home,Resource.Drawable.icon_1_n, this.mAIntent));
+            localTabHost.AddTab(BuildTabSpec("A_TAB",Resource.String.main_home,Resource.Drawable.icon_1_n, this.mAIntent));
 
-            localTabHost.AddTab(BuildTabSpec("B_TAB", Resource.String.main_news,
-                Resource.Drawable.icon_2_n, this.mBIntent));
+            localTabHost.AddTab(BuildTabSpec("B_TAB",Resource.String.main_news,Resource.Drawable.icon_2_n, this.mBIntent));
 
-            localTabHost.AddTab(BuildTabSpec("C_TAB",
-                Resource.String.main_manage_date, Resource.Drawable.icon_3_n,
-                this.mCIntent));
+            localTabHost.AddTab(BuildTabSpec("C_TAB",Resource.String.main_manage_date, Resource.Drawable.icon_3_n,this.mCIntent));
 
 
         }

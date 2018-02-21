@@ -53,15 +53,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Activity\BActivity.cs" />
-    <Compile Include="Activity\CActivity.cs" />
-    <Compile Include="Activity\AActivity.cs" />
+    <Compile Include="Activity\CallServiceActivity.cs" />
+    <Compile Include="Activity\MissionActivity.cs" />
     <Compile Include="CustomListAdapter.cs" />
     <Compile Include="data.cs" />
     <Compile Include="ExpandableListAdapter.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="PointList.cs" />
+    <Compile Include="PointListActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -72,7 +71,7 @@
     <AndroidResource Include="Resources\layout\Login.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\CallPage.axml">
+    <AndroidResource Include="Resources\layout\CallService.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\MissionList.axml">
@@ -91,9 +90,6 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\PointItem.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\layout1.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\AlertList.axml">
