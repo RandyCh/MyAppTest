@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:background="@android:color/holo_orange_dark"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="北區調度員"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textNorth" />
+        <ImageView
+            android:src="@drawable/icon_4_n"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView1" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:id="@+id/linearLayout2">
+        <TextView
+            android:text="中區調度員"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textCenter" />
+      <ImageView
+   android:src="@drawable/icon_4_n"
+   android:layout_width="wrap_content"
+   android:layout_height="match_parent"
+   android:id="@+id/imageView1" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:id="@+id/linearLayout3">
+        <TextView
+            android:text="南區調度員"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textSouth" />
+      <ImageView
+   android:src="@drawable/icon_4_n"
+   android:layout_width="wrap_content"
+   android:layout_height="match_parent"
+   android:id="@+id/imageView1" />
+    </LinearLayout>
+</LinearLayout>
